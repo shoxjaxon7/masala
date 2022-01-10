@@ -26,16 +26,21 @@ console.log(blank);
 
 //3-masala
 //  3 SHARTIGA UNCHA CHUNMADIM AGAR CHUNGANIMDA ANIQ ISHLAY OLARDIM
+// MASALA 3
+
 let salaries = {
-  Akmal: 1200,
+  Akmal: 100,
   Salim: 5200,
   Karima: 1800,
-  sumSalaries: function () {
-    // let sum = 0;
-    for (let salary of Object.values(salaries)) {
-      console.log(salary);
-    }
-  },
 };
-// console.log(sumSalaries(salaries));
-console.log(salaries.sumSalaries());
+
+let sum = function (salare) {
+  let sumSalaries = 0;
+
+  for (let salary of Object.values(salare)) {
+    sumSalaries += salary;
+  }
+  return sumSalaries;
+};
+
+console.log(sum(salaries));
